@@ -193,3 +193,61 @@ nav a:first-child::after {
 .highlight-number {
   color: #5bccc8;
 }
+
+.gallery {
+  padding: 160px 5% 200px;
+  background: #fff;
+  position: relative;
+}
+
+.gallery-squares {
+  position: relative;
+  min-height: 475px;
+  margin-top: -200px;
+}
+
+.gallery-squares__right,
+.gallery-squares__left {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+}
+
+.gallery-squares__right img,
+.gallery-squares__left img,
+.gallery-squares__small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-squares__right {
+  right: 17.1%;
+}
+.gallery-squares__left {
+  top: 225px;
+  left: 17.2%;
+}
+
+.gallery-squares__small {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+}
+
+.gallery-squares__small--top {
+  top: 245px;
+  left: 33.6%;
+  transform: translateY(-100%);
+  margin-top: -20px;
+}
+
+.gallery-squares__small--bottom {
+  top: 450px;
+  right: 33.5%;
+}
+
+.gallery-squares__small--right {
+  top: 450px;
+  right: 17.1%;
+}
