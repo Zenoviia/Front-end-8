@@ -13,7 +13,10 @@ a {
 
 header,
 header .logo,
-header nav a {
+header nav a,
+.about-new .section-label,
+.about-new .feature-title,
+.about-new .feature-text {
   font-family: "Inter", sans-serif;
 }
 
@@ -25,7 +28,6 @@ header {
   display: flex;
   align-items: center;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
 }
 
 .logo {
@@ -33,7 +35,6 @@ header {
   left: 5%;
   font-weight: 700;
   font-size: 24px;
-  color: #000;
 }
 
 .nav-wrapper {
@@ -46,7 +47,6 @@ nav a {
   margin-left: 40px;
   color: #999;
   position: relative;
-  font-weight: 500;
 }
 
 nav a.active,
@@ -69,6 +69,7 @@ nav a:first-child::after {
   position: absolute;
   right: 5%;
   display: flex;
+  align-items: center;
   gap: 22px;
 }
 
@@ -92,7 +93,10 @@ nav a:first-child::after {
   font-size: 48px;
   font-weight: 400;
   max-width: 560px;
-  line-height: 1.3;
+}
+
+.hero .subfeature-icon {
+  background: transparent;
 }
 
 .hero-image {
@@ -116,6 +120,7 @@ nav a:first-child::after {
 .hero-badge strong {
   font-size: 19px;
 }
+
 .hero-badge span {
   line-height: 1.6;
 }
@@ -129,13 +134,21 @@ nav a:first-child::after {
 .subfeature {
   max-width: 220px;
 }
+
+.subfeature-icon {
+  width: 45px;
+  margin-bottom: 12px;
+}
+
 .subfeature h4 {
   font-size: 20px;
-  margin: 8px 0;
+  margin-bottom: 8px;
 }
+
 .subfeature p {
   color: #666;
 }
+
 .features {
   padding: 100px 10% 120px;
   background: linear-gradient(to right, #f8f9fb 50%, #ffffff 50%);
@@ -371,4 +384,129 @@ nav a:first-child::after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
+}
+
+.feature-item {
+  text-align: left;
+}
+
+.feature-icon {
+  width: 88px;
+  height: 88px;
+  background: #5bccc8;
+  border-radius: 50%;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-title {
+  font-size: 24px;
+  margin: 0 0 14px 0;
+  color: #222;
+}
+
+.feature-text {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.testimonial {
+  padding: 180px 0 240px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-image-wrapper {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(calc(-50% - 200px));
+  width: 43vw;
+  height: 540px;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.testimonial-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(calc(-50% - 140px));
+  right: 0;
+  width: 60vw;
+  height: 540px;
+  background: #5bccc8;
+  padding: 80px 10% 80px 140px;
+  color: white;
+  box-sizing: border-box;
+  z-index: 10;
+  text-align: left;
+}
+
+.testimonial blockquote {
+  font-size: 28px;
+  line-height: 1.65;
+  font-weight: 400;
+  margin: 0 0 50px 0;
+  color: white;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.author-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+}
+
+.author-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.author-title {
+  font-size: 15px;
+  opacity: 0.9;
+  color: white;
+  margin-top: 4px;
+}
+
+.spacer {
+  position: relative;
+  height: 540px;
+}
+
+.section-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #5bccc8;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 50px;
 }
