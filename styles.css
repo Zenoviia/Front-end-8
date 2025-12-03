@@ -136,3 +136,60 @@ nav a:first-child::after {
 .subfeature p {
   color: #666;
 }
+.features {
+  padding: 100px 10% 120px;
+  background: linear-gradient(to right, #f8f9fb 50%, #ffffff 50%);
+  text-align: center;
+}
+
+.features .about-icon.turquoise {
+  margin-left: 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.about-left {
+  justify-self: center;
+  max-width: 450px;
+}
+
+.about-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.about-card {
+  text-align: left;
+}
+
+.about-card h3 {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.about-icon {
+  width: 88px;
+  height: 88px;
+  background: #5bccc8;
+  border-radius: 50%;
+  margin: 0 auto 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features .about-card p,
+.features .about-left p,
+.features .about-right p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.highlight-number {
+  color: #5bccc8;
+}
