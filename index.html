@@ -468,5 +468,12 @@
 
       <div class="spacer"></div>
     </section>
+    <script>
+      document.querySelectorAll('a[href="#"]').forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      });
+    </script>
   </body>
 </html>
