@@ -251,3 +251,98 @@ nav a:first-child::after {
   top: 450px;
   right: 17.1%;
 }
+
+.pricing {
+  padding: 240px 10% 10px;
+  background: #f8f9fb;
+  text-align: center;
+  margin-top: -140px;
+}
+
+.pricing .section-label {
+  display: block;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: -325px;
+}
+
+.price-card {
+  color: white;
+  padding: 60px 40px;
+}
+
+.price-card.free {
+  background: #5bccc8;
+}
+
+.price-card.free .btn {
+  background: #888 !important;
+  border-color: #888;
+}
+
+.price-card.premium {
+  background: #6ebfb6;
+}
+
+.price-card.enterprise {
+  background: #aee498;
+}
+
+.price-card.enterprise .btn {
+  background: #5bccc8 !important;
+  border-color: #5bccc8;
+}
+
+.price-card h3 {
+  font-size: 32px;
+}
+
+.price {
+  font-size: 64px;
+  margin: 24px 0;
+  display: flex;
+  justify-content: center;
+}
+.price sup {
+  font-size: 0.5em;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.price-card ul {
+  text-align: left;
+  margin: 40px 0;
+  list-style: none;
+}
+
+.price-card ul li {
+  margin-bottom: 16px;
+  padding-left: 32px;
+  position: relative;
+  font-size: 18px;
+}
+
+.price-card ul li::before {
+  content: ">";
+  font-size: 22px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.price-card .btn {
+  display: inline-block;
+  padding: 16px 40px;
+  color: white;
+  border: 2px solid white;
+  font-weight: 600;
+}
+
+.price-card.free .btn,
+.price-card.enterprise .btn {
+  background: transparent !important;
+  border-color: white !important;
+}
