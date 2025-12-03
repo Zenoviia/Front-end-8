@@ -346,3 +346,29 @@ nav a:first-child::after {
   background: transparent !important;
   border-color: white !important;
 }
+
+.about-new {
+  padding: 180px 10% 160px;
+  background: #ffffff;
+  margin-top: 320px;
+}
+
+.about-new .about-grid-new {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  align-items: start;
+}
+
+.about-new h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.about-right-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
