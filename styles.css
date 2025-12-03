@@ -1,0 +1,67 @@
+* { margin: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+}
+
+a { text-decoration: none; }
+
+header, header .logo, header nav a {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  position: fixed;
+  left: 0; right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
+}
+
+.logo {
+  position: absolute;
+  left: 5%;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+nav a {
+  margin-left: 40px;
+  color: #999;
+  position: relative;
+  font-weight: 500;
+}
+
+nav a.active, nav a:first-child {
+  color: #000;
+  font-weight: 600;
+}
+
+nav a:first-child::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  bottom: -10px;
+  height: 2px;
+  background: #000;
+}
+
+.header-icons {
+  position: absolute;
+  right: 5%;
+  display: flex;
+  gap: 22px;
+}
+
+.header-icons .icon svg {
+  color: #5bccc8;
+}
