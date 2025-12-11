@@ -741,7 +741,7 @@ nav a:first-child::after {
     background: #ffffff;
   }
 
-    .feature-item,
+  .feature-item,
   .about-card {
     text-align: center !important;
   }
@@ -752,5 +752,3 @@ nav a:first-child::after {
     margin-right: auto !important;
   }
 }
-
-
