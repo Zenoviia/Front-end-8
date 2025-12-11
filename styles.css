@@ -657,7 +657,6 @@ nav a:first-child::after {
   top: 0;
   transform: none;
   margin-top: 0;
-  right: 300px;
 }
 
 .gallery-squares__small--bottom {
