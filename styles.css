@@ -510,8 +510,6 @@ nav a:first-child::after {
   margin-bottom: 50px;
 }
 
-
-
 @media (max-width: 768px) {
   header {
     padding: 0 20px;
@@ -559,7 +557,7 @@ nav a:first-child::after {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   nav {
     gap: 12px;
   }
@@ -597,7 +595,7 @@ nav a:first-child::after {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .gallery-squares {
     --square-large-size: 300px;
     --square-small-size: 150px;
@@ -707,14 +705,13 @@ nav a:first-child::after {
     text-align: left;
   }
 
-  /* Змінені відступи для адаптивного режиму (max-width: 992px) */
   .about-new {
-    padding: 60px 10% 60px; /* Трохи зменшуємо вертикальний padding */
+    padding: 60px 10% 60px;
     margin-top: 50px;
   }
 
   .testimonial {
-    padding-top: 20px; /* Зменшуємо відступ зверху від about-new до 20px */
+    padding-top: 20px;
     padding-bottom: 40px;
     overflow: visible;
   }
@@ -796,11 +793,11 @@ nav a:first-child::after {
 
 @media (max-width: 768px) {
   .about-new {
-    padding: 60px 5% 40px !important; /* ще компактніше на мобілках */
+    padding: 60px 5% 40px !important;
   }
 
   .testimonial {
-    padding-top: 40px !important; /* мінімальний відступ зверху */
+    padding-top: 40px !important;
     padding-bottom: 80px !important;
   }
 
@@ -861,5 +858,12 @@ nav a:first-child::after {
   }
   .testimonial {
     padding-top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-squares {
+    --square-large-size: 165px !important;
+    --square-small-size: 83px !important;
   }
 }
