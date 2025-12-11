@@ -604,6 +604,11 @@ nav a:first-child::after {
     --square-large-size: 300px;
     --square-small-size: 150px;
   }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 768px) {
