@@ -510,11 +510,9 @@ nav a:first-child::after {
   margin-bottom: 50px;
 }
 
-/* ========================= */
-/* RESPONSIVE HEADER       */
-/* ========================= */
 
-@media (max-width: 1024px) {
+
+@media (max-width: 768px) {
   header {
     padding: 0 20px;
   }
@@ -524,7 +522,7 @@ nav a:first-child::after {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   header {
     height: auto;
     flex-wrap: wrap;
@@ -592,14 +590,14 @@ nav a:first-child::after {
   margin-right: auto;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 768px) {
   .gallery-squares {
     --square-large-size: 350px;
     --square-small-size: 175px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .gallery-squares {
     --square-large-size: 300px;
     --square-small-size: 150px;
@@ -670,7 +668,7 @@ nav a:first-child::after {
   right: 0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .hero {
     height: auto;
     display: flex;
@@ -798,14 +796,12 @@ nav a:first-child::after {
 
 @media (max-width: 768px) {
   .about-new {
-    padding: 60px 10% 60px;
-    margin-top: 50px;
+    padding: 60px 5% 40px !important; /* ще компактніше на мобілках */
   }
 
   .testimonial {
-    padding: 0 0 40px 0;
-    overflow: visible;
-    padding-top: 20px;
+    padding-top: 40px !important; /* мінімальний відступ зверху */
+    padding-bottom: 80px !important;
   }
 
   .testimonial-content {
@@ -840,5 +836,30 @@ nav a:first-child::after {
 
   .testimonial-content {
     padding: 40px 5%;
+  }
+
+  .spacer {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-new {
+    padding-bottom: 500px;
+  }
+  .testimonial {
+    padding-top: 140px;
+  }
+  .spacer {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-new {
+    padding-bottom: 80px;
+  }
+  .testimonial {
+    padding-top: 120px;
   }
 }
