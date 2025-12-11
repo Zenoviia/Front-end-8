@@ -721,17 +721,14 @@ nav a:first-child::after {
     gap: 40px;
   }
 
-  /* Центрування вмісту картки та іконки */
   .about-card {
-    text-align: center; /* Центрує текст */
+    text-align: center;
   }
 
   .about-icon {
-    /* Цей клас вже має 'margin: 0 auto', але ми його підтверджуємо, щоб бути певними, що він перезапише інші стилі */
     margin: 0 auto 24px;
   }
 
-  /* Для about-left, який є описом секції */
   .features .about-left p,
   .features .about-right p {
     text-align: center;
@@ -755,5 +752,34 @@ nav a:first-child::after {
   .about-icon {
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-new .about-grid-new {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .about-right-icons {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-new h2 {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .about-new .section-label {
+    text-align: center;
+  }
+
+  .feature-item {
+    text-align: center;
+  }
+
+  .feature-icon {
+    margin: 0 auto 24px;
   }
 }
