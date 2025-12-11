@@ -708,6 +708,18 @@ nav a:first-child::after {
     margin-top: 30px;
     text-align: left;
   }
+
+  /* Змінені відступи для адаптивного режиму (max-width: 992px) */
+  .about-new {
+    padding: 60px 10% 60px; /* Трохи зменшуємо вертикальний padding */
+    margin-top: 50px;
+  }
+
+  .testimonial {
+    padding-top: 20px; /* Зменшуємо відступ зверху від about-new до 20px */
+    padding-bottom: 40px;
+    overflow: visible;
+  }
 }
 
 @media (max-width: 768px) {
@@ -784,10 +796,16 @@ nav a:first-child::after {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
+  .about-new {
+    padding: 60px 10% 60px;
+    margin-top: 50px;
+  }
+
   .testimonial {
     padding: 0 0 40px 0;
     overflow: visible;
+    padding-top: 20px;
   }
 
   .testimonial-content {
