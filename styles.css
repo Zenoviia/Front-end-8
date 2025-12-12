@@ -702,7 +702,10 @@ nav a:first-child::after {
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 30px;
-    text-align: left;
+  }
+
+  .subfeature-icon {
+    margin: 0 auto 12px; 
   }
 
   .about-new {
