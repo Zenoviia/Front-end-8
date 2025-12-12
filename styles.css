@@ -863,7 +863,23 @@ nav a:first-child::after {
 
 @media (max-width: 768px) {
   .gallery-squares {
-    --square-large-size: 165px !important;
-    --square-small-size: 83px !important;
+    --square-large-size: 194px !important;
+    --square-small-size: 97px !important;
+  }
+}
+
+@media (min-width: 100px) {
+  .pricing {
+    margin-top: -100px;
+    padding-bottom: 50px;
+  }
+
+  .pricing-grid {
+    margin-bottom: -100px;
+  }
+
+  .about-new {
+    margin-top: 150px;
+    padding-top: 50px;
   }
 }
