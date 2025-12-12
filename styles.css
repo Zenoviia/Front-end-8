@@ -883,3 +883,21 @@ nav a:first-child::after {
     padding-top: 50px;
   }
 }
+
+@media (max-width: 1024px) {
+  .nav-wrapper {
+    width: 100%;
+    order: 3;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+}
