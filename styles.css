@@ -16,7 +16,9 @@ header .logo,
 header nav a,
 .about-new .section-label,
 .about-new .feature-title,
-.about-new .feature-text {
+.about-new .feature-text,
+.features .section-label,
+.pricing .section-label {
   font-family: "Inter", sans-serif;
 }
 
@@ -861,6 +863,9 @@ nav a:first-child::after {
   }
   .testimonial {
     padding-top: 120px;
+  }
+  .about-new .about-left-text {
+    text-align: center; 
   }
 }
 
